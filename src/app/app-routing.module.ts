@@ -6,8 +6,8 @@ import { PostLogonComponent } from './post-logon/post-logon.component';
 
 const routes: Routes = [
   { path: '', component: LandingPageComponent },
-  { path: 'post-logon', component: LoyaltyComponent },
-  { path: 'loyalty', component: PostLogonComponent }
+  { path: 'post-logon', component: PostLogonComponent },
+  { path: 'loyalty', component: LoyaltyComponent }
 
 ];
 

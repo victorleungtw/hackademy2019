@@ -1,1 +1,54 @@
-<p>loyalty works!</p>
+
+  <body class="bg-light">
+    <div class="container">
+  <div class="py-5 text-center">
+    <h2>Congrats!!</h2>
+    <p class="lead">You have accumulate 201 loyalty points</p>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 order-md-2 mb-4">
+      <h4 class="d-flex justify-content-between align-items-center mb-3">
+        <span class="text-muted">Summary</span>
+        <span class="badge badge-secondary badge-pill">1</span>
+      </h4>
+      <ul class="list-group mb-3">
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+            <h6 class="my-0">HKD</h6>
+            <small class="text-muted">1000</small>
+          </div>
+          <span class="text-muted">EUR 113.41</span>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-8 order-md-1">
+      <h4 class="mb-3">Transaction</h4>
+      <form class="needs-validation" novalidate>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="firstName">HKD</label>
+            <input type="text" class="form-control" id="hkd" placeholder="" value="1000" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="lastName">EUR</label>
+            <input type="text" class="form-control" id="eur" placeholder="" value="113.41" required>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="username">Loyalty Points Earn</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">@</span>
+            </div>
+            <input type="text" class="form-control" id="username" placeholder="" value="201">
+          </div>
+        </div>
+
+        <hr class="mb-4">
+        <button class="btn btn-primary btn-lg btn-block" type="submit">Confirm</button>
+      </form>
+    </div>
+  </div>
+</div>
