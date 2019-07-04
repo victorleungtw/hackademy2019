@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'hackademy2019';
+
+  banks = [
+    {
+      name: 'HSBC',
+      img:'hsbc.png'
+    },
+    {
+      name: 'Hang Seng',
+      img:'hangseng.png'
+    }
+  ];
 }
