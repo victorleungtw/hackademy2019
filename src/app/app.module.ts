@@ -3,10 +3,16 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { LoyaltyComponent } from './loyalty/loyalty.component';
+import { PostLogonComponent } from './post-logon/post-logon.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoyaltyComponent,
+    PostLogonComponent,
+    LandingPageComponent
   ],
   imports: [
     BrowserModule,
