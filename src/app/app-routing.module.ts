@@ -1,18 +1,17 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { LandingPageComponent } from './landing-page/landing-page.component';
-import { LoyaltyComponent } from './loyalty/loyalty.component';
-import { PostLogonComponent } from './post-logon/post-logon.component';
+import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', component: LandingPageComponent },
-  { path: 'post-logon', component: PostLogonComponent },
-  { path: 'loyalty', component: LoyaltyComponent }
-
+  { path: '', loadChildren: './tabs/tabs.module#TabsPageModule' },
+  { path: 'bookings', loadChildren: './bookings/bookings.module#BookingsPageModule' },
+  { path: 'rewards', loadChildren: './rewards/rewards.module#RewardsPageModule' },
+  { path: 'forum', loadChildren: './forum/forum.module#ForumPageModule' },
+  { path: 'me', loadChildren: './me/me.module#MePageModule' }
 ];
-
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules, useHash: true })
+  ],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

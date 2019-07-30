@@ -1,0 +1,8 @@
+{
+  "name": "fxCombine",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

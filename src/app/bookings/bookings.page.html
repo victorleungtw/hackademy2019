@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Loyalty Points
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Congrats!!</ion-card-title>
+      <ion-card-subtitle>You have accumulate 201 loyalty points</ion-card-subtitle>
+    </ion-card-header>
+    <a routerLink="/tabs/rewards">
+      <ion-button float-right>
+        Redeem loyalty points
+      </ion-button>
+    </a>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Summary</ion-card-title>
+    </ion-card-header>
+
+    <form>
+      <ion-list lines="full" class="ion-no-margin ion-no-padding">
+        <ion-item>
+          <ion-label position="stacked">HKD <ion-text color="danger">*</ion-text></ion-label>
+          <ion-input required type="text">1000</ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">to JPY <ion-text color="danger">*</ion-text></ion-label>
+          <ion-input required type="text">13793.7</ion-input>
+        </ion-item>
+      </ion-list>
+    </form>
+  </ion-card>
+
+  <img class="img-map" src="/assets/map.png">
+  <ion-button expand="block">Book a time at nearest branch</ion-button>
+
+</ion-content>

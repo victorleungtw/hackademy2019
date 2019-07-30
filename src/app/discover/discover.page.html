@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      FX COMBINE
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Compare & Save on Cheap FX Deals</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+
+      <ion-item>
+        <ion-label>From currency</ion-label>
+        <ion-select interface="popover" (ionChange)="selectFromCurrency($event)" [(ngModel)]="fromCurrency">
+          <ion-select-option value="{{currency.code}}" *ngFor="let currency of currencys">{{currency.code}}</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>To currency</ion-label>
+        <ion-select interface="popover" (ionChange)="selectToCurrency($event)" [(ngModel)]="toCurrency">
+          <ion-select-option value="{{currency.code}}" *ngFor="let currency of currencys">{{currency.code}}</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+    </ion-card-content>
+
+    <ion-button color="light" size="small" float-right (click)="getLocation()">
+      <ion-icon name="locate"></ion-icon>  Base on your location
+    </ion-button>
+
+  </ion-card>
+
+  <ion-list>
+    <ion-item *ngFor="let bank of banks" routerLink="/tabs/forum">
+      <ion-thumbnail slot="start">
+        <img class="bank-img" src="/assets/{{bank.img}}">
+      </ion-thumbnail>
+      <ion-label>
+        <h2>{{bank.name}}</h2>
+        <h3>{{fromCurrency}} to {{toCurrency}}</h3>
+        <p>{{bank.rate}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-text>
+    <p class="source"><small>Source: Open Banking API</small></p>
+  </ion-text>
+
+</ion-content>

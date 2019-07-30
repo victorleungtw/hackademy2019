@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "LastUpdated": "2019-01-04T15:00:56.967+08:00",
+    "TotalResults": 2,
+    "Agreement": "Use of the APIs and any related data will be subject to terms and conditions."
+  },
+  "data": [{
+    "Brand": [{
+      "BrandName": "HSBC",
+      "ExchangeRateType": [{
+        "ExchangeRateTypeName": "Banknote",
+        "Notes": ["The information shown is for indication only."],
+        "ExchangeRate": [{
+          "ExchangeRateTierBand": [{
+            "CurrencyCode": "USD",
+            "CurrencyName": "US Dollar",
+            "BankBuyRate": "7.76840",
+            "BankSellRate": "7.89490",
+            "Notes": "The information shown is for indication only.",
+            "LastUpdateDateTime": "2019-01-04T14:59:00.000+08:00"
+          }]
+        }]
+      },
+      {
+        "ExchangeRateTypeName": "Telegraphic Transfer",
+        "Notes": ["The information shown is for indication only."],
+        "ExchangeRate": [{
+          "ExchangeRateTierBand": [{
+            "CurrencyCode": "USD",
+            "CurrencyName": "US Dollar",
+            "BankBuyRate": "7.79370",
+            "BankSellRate": "7.86950",
+            "LastUpdateDateTime": "2019-01-04T14:59:00.000+08:00",
+            "Notes": "The information shown is for indication only."
+          }]
+        }]
+      }]
+    }]
+  }]
+}
