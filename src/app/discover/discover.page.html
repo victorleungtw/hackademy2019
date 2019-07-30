@@ -38,14 +38,14 @@
   </ion-card>
 
   <ion-list>
-    <ion-item *ngFor="let bank of banks" routerLink="/tabs/forum">
+    <ion-item *ngFor="let rate of rates" routerLink="/tabs/forum">
       <ion-thumbnail slot="start">
-        <img class="bank-img" src="/assets/{{bank.img}}">
+        <img class="bank-img" src="/assets/{{rate.img}}">
       </ion-thumbnail>
       <ion-label>
-        <h2>{{bank.name}}</h2>
+        <h2>{{rate.name}}</h2>
         <h3>{{fromCurrency}} to {{toCurrency}}</h3>
-        <p>{{bank.rate}}</p>
+        <p>{{rate.rate}}</p>
       </ion-label>
     </ion-item>
   </ion-list>
