@@ -1,7 +1,9 @@
-<<<<<<< HEAD
 # Hackademy2019
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.0.
+This project is for demo of our app FX Combine for Hackademy 2019.
+
+## Demo Link
+http://hackademy2019.s3-website-ap-southeast-1.amazonaws.com/
 
 ## Development server
 
@@ -9,7 +11,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run `ionic generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
 
@@ -26,6 +28,3 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-=======
-# hackademy2019
->>>>>>> 69889a4f3e51cdcd520420efae312be11b7cfc61
