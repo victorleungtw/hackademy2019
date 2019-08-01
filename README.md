@@ -5,6 +5,10 @@ This project is for demo of our app FX Combine for Hackademy 2019.
 ## Demo Link
 http://hackademy2019.s3-website-ap-southeast-1.amazonaws.com/
 
+And YouTube video:
+
+[![Demo](https://img.youtube.com/vi/uh-DrjGf5Ow/0.jpg)](https://www.youtube.com/watch?v=uh-DrjGf5Ow)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

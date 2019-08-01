@@ -3,5 +3,8 @@
   "appName": "fxCombine",
   "bundledWebRuntime": false,
   "npmClient": "npm",
-  "webDir": "www"
+  "webDir": "www",
+  "server": {
+    "url": "http://10.211.186.28:8100"
+  }
 }
